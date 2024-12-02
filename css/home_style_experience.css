@@ -1,0 +1,86 @@
+/*
+body, html{
+    background-color: whitesmoke;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    padding-top: 80px;
+}
+*/
+
+/* Pentru Experience */
+
+.experience {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.experience h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.experience h3 {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 40px;
+    font-style: normal;
+}
+
+/* Stil pentru timeline container */
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.timeline-dot {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    margin-left: -10px;
+    z-index: 1;
+}
+
+.timeline-content {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.timeline-content .date {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.timeline-content p {
+    font-size: 16px;
+    color: #333;
+}

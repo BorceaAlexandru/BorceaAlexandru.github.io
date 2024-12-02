@@ -1,0 +1,56 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.left{
+    justify-content: flex-start;
+}
+
+.right{
+    justify-content: flex-end;
+}
+
+.logo{
+    height: 40px;
+    padding: 14px 16px;
+}
+
+li a{
+    padding: 14px 16px;
+    color: #666;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: whitesmoke;
+}
+
+.contact-link{
+    padding: 14px 16px;
+    color: #666;
+    text-decoration: none;
+}
+
+.contact-link:hover{
+    background-color: whitesmoke;
+}
+
+/*
+.active{
+    background-color: gray;
+}
+*/
