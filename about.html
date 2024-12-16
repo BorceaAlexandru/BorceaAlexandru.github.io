@@ -16,14 +16,23 @@
     </head>
 <body>
     <header>
+        <div class="hamburger" id="hamburger">
+            <i class="fa fa-bars"></i>
+        </div>
         <ul class="left">
             <li><img src="images_home/logo_AB.jpg" alt="Logo" class="logo"></li>
-            <li><a href="index.html">HOME</a></li>
-            <li><a class="active" href="about.html">ABOUT</a></li>
+            <li><a class="active" href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
             <li><a href="portofolio.html">PORTOFOLIO</a></li>
         </ul>
         <ul class="right">
-            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="contact.html" class="contact-link">CONTACT</a></li>
+        </ul>
+        <ul class="mobile-menu" id="mobile-menu">
+            <li><a class="active" href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="portofolio.html">PORTOFOLIO</a></li>
+            <li><a href="contact.html" class="contact-link">CONTACT</a></li>
         </ul>
     </header>
 
@@ -58,5 +67,15 @@
             <p>Copyright &copy;2024; Designed by <span class="designer">Alex</span></p>
         </div>
     </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobile-menu');
+    
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+    </script>
+
 </body>
 </html>

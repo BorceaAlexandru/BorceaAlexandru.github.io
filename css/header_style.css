@@ -1,4 +1,4 @@
-header{
+header {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -8,7 +8,7 @@ header{
     z-index: 1000;
 }
 
-ul{
+ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -16,41 +16,86 @@ ul{
     align-items: center;
 }
 
-.left{
+.left {
     justify-content: flex-start;
 }
 
-.right{
+.right {
     justify-content: flex-end;
 }
 
-.logo{
+.logo {
     height: 40px;
     padding: 14px 16px;
 }
 
-li a{
+li a {
     padding: 14px 16px;
     color: #666;
     text-decoration: none;
 }
 
-li a:hover{
+li a:hover {
     background-color: whitesmoke;
 }
 
-.contact-link{
+.contact-link {
     padding: 14px 16px;
     color: #666;
     text-decoration: none;
 }
 
-.contact-link:hover{
+.contact-link:hover {
     background-color: whitesmoke;
 }
 
-/*
-.active{
-    background-color: gray;
+.hamburger {
+    display: none; /* Hidden by default */
+    cursor: pointer;
+    padding: 14px 16px;
 }
-*/
+
+.mobile-menu {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust based on your header height */
+    right: 0;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-menu li {
+    text-align: center;
+}
+
+.mobile-menu li a {
+    padding: 14px 16px;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Show hamburger icon on small screens */
+    }
+
+    ul.left, ul.right {
+        display: none; /* Hide the regular menu on small screens */
+    }
+
+    .mobile-menu.active {
+        display: flex; /* Show mobile menu when active */
+    }
+}
+
+/* Add this to fix the desktop format */
+@media (min-width: 769px) {
+    .left {
+        margin-left: 20px;
+    }
+
+    .right {
+        margin-right: 20px;
+    }
+}
